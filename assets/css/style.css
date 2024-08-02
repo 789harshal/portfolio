@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+.header {
+    background-color: rgba(0, 0, 0, .97);
+}
+
+.navbar {
+    padding: .5rem 1rem;
+}
+
+.navbar h4 {
+    margin: 0;
+}
+
+.nav-item a {
+    font-size: 14px;
+    color: #fff !important;
+}
+
+.nav-link:active{
+    color: #ff206e !important;
+}
+.fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.sticky {
+    background-color: rgba(0, 0, 0, .97);
+    transition: all .35s ease-in-out;
+}
+
+.navebar-brand {
+    font-weight: 600;
+    letter-spacing: 2PX;
+    padding-left: 15PX;
+    font-size: 16PX;
+    color: #fff;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    transition: all .5s ease-in;
+    /* z-index: 1; */
+}
+
+.home {
+    background-color: #000;
+    height: 100vh;
+    opacity: 1 !important;
+}
+
+.picture::before {
+    content: '';
+    position: absolute;
+    background-image: url('https://svyatoslavkopyl.com/demo/osaka/image/bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    z-index: 5;
+}
+
+.display-table {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home-title h1 {
+    z-index: 10;
+    font-size: 3rem;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.home-title h4 {
+    z-index: 10;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.home-title a {
+    position: relative;
+    color: #ff206e;
+    text-decoration: none;
+    z-index: 15;
+    font-weight: 300;
+}
+
+.home-bar {
+    z-index: 18;
+    position: absolute;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+.home-social .list-inline-item a:hover{
+    border: 1px solid #fff;
+}
+.home-social .list-unstyled {
+    margin-bottom: 0;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline-item {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+.home-social .list-inline-item a {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: #fff;
+    border: 1px solid #222;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    text-decoration: none;
+    -webkit-transition: all 1s cubic-bezier(.23, 1, .32, 1);
+    -o-transition: all 1s cubic-bezier(.23, 1, .32, 1);
+    transition: all 1s cubic-bezier(.23, 1, .32, 1);
+}
+
+.home-scroll {
+    margin-bottom: 10px;
+    position: absolute;
+    display: block;
+    z-index: 50;
+    transition: all 2s cubic-bezier(.23, 1, .32, 1);
+    border-radius: 50px;
+    height: 32px;
+    width: 22px;
+    padding: 0;
+    left: 50%;
+    bottom: 0 !important;
+    border: 1px solid #333;
+}
+
+.about {
+    padding: 6rem 0;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.heading {
+    text-transform: uppercase;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.heading h2 {
+    font-weight: 800;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    color: #f1f1f19d;
+    font-size: 5rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.heading h3 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-top: .25rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+}
+
+.heading-text {
+    text-align: center;
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+
+.heading-text p {
+    font-size: 14px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    height: 448px;
+    width: 380px;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 768px) {
+    .set-md-1 {
+        margin-left: 8.333333%;
+    }
+}
+.my-info {
+    width: 100%;
+    height: auto;
+}
+
+.info-text {
+    margin-bottom: 48px;
+}
+
+.info-text h4 {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.info-text h6 {
+    color: #ff206e !important;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.info-text p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.my-info p a {
+    color: #000;
+    font-weight: 600;
+}
+
+.skill {
+    background-color: #000;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.title {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.title h2 {
+    color: #414040b5;
+    font-size: 5rem;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.title h3 {
+    text-transform: uppercase;
+    z-index: 1;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 4px;
+}
+
+.title-p {
+    font-size: 14px;
+    color: #ffffff8c;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.services {
+    z-index: 1;
+    padding: 6rem 0;
+    background-image: url('https://svyatoslavkopyl.com/demo/osaka/image/dark_dot.jpg');
+    background-attachment: fixed;
+    background-color: #000;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+.services-box {
+    height: auto;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 4rem;
+    position: relative;
+    transition: all .35s ease-in-out;
+}
+
+.services-box i {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .15);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    padding: 17px 0;
+    width: 62px;
+    transform: translateX(-50%);
+    transition: all .35s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.box-text {
+    padding: 3rem 1rem 2rem;
+    text-align: center;
+}
+
+.box-text h5 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.box-text h5:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ff206e;
+    margin: .75rem auto;
+    width: 35px;
+    transition: all .35s ease-in-out;
+}
+
+.services-box i {
+    font-weight: 600;
+}
+
+.services-box:hover .box-text h5:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ff206e;
+    margin: 12px auto;
+    width: 45px;
+    transition: all .35s ease-in-out;
+}
+
+.services-box:hover i {
+    color: #ff206e;
+}
+
+.portfolio {
+    padding: 6rem 0;
+}
+
+.gread-list {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gread-list span {
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    transition: all .35s ease-in-out;
+}
+
+/* .gread-list span:active{
+    color: #ff206e;
+}   */
+
+.price {
+    padding: 96px 0px 56px !important;
+}
+
+.price-box {
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 25px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin: 4px 16px 4px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.box-header {
+    background-color: #000;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.price-heading {
+    margin-bottom: 8px;
+}
+
+.price-heading h4 {
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.line {
+    background-color: #fff;
+    margin: 0 auto;
+    height: 2px;
+    width: 60px;
+}
+
+.price-pay {
+    margin: 28px 0;
+}
+
+.price-pay h3 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #ff206e;
+    margin-bottom: 0;
+}
+
+.free h3 {
+    color: #fff;
+}
+
+.price-pay h3 span {
+    font-size: 32px;
+}
+
+.price-info {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.price-info p::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1 !important;
+    margin: 16px 0 !important;
+}
+
+.price-box button {
+    background-color: #000;
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .15);
+}
+
+.price-box .btn {
+    border: none;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    padding: .5rem 2rem;
+    transition: all .35s ease-in-out;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-icon i {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.statistics {
+    z-index: 1;
+    padding: 6rem 0;
+    background-image: url('https://svyatoslavkopyl.com/demo/osaka/image/stat.jpg');
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .4s all linear;
+    position: relative;
+}
+
+.statistics:before {
+    content: '';
+    background-color: #000000bd;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* opacity: .60; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    filter: drop-shadow(100%);
+}
+
+.counter {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ff206e;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.stat-text h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.company{
+    padding: 48px 0;
+    background-color: #000 !important;
+}
+.mr-logo img{
+    height: 48px;
+    width: auto;
+    margin: 0 50px;
+}
+.shadow-3{
+    margin-top: 25px;
+}
+
+.blog{
+    padding-top: 96px;
+    padding-bottom: 80px;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img img{
+    display: block;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: auto;
+}
+.blog-content{
+    position: relative;
+    padding: 32px 24px;
+}
+.padd{
+    padding-inline: 0 !important;
+
+}
+.blog-post{
+    border-radius: 0 0 5px 5px;
+    margin: 4px 12px 40px;
+}
+
+.blog-icon{
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+
+.blog-icon a{
+color: #000;
+box-shadow: 0 3px 20px rgba(0, 0, 0, .15);
+border-radius: 50%;
+padding: 1rem;
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 56px;
+z-index: 1;
+transition: all 1s cubic-bezier(.23,1,.32,1);
+background-color: #fff;
+text-align: center;
+}
+.blog-content h5 {
+    font-size:20px;
+    font-weight: 600;
+    color: #000;
+}
+.blog-info a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff206e;
+    margin-right: 24px;
+    text-decoration: none;
+}
+.blog-info a i{
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+.blog-info{
+    margin-bottom: 16px;
+}
+.blog-content p{
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+
+
+
+.contect{
+    background-color: #000;
+    padding: 6rem 0;
+}
+
+.form-group{
+    margin-bottom:16px ;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #888;
+    border-radius: 0;
+    color: #fff !important;
+    transition: all .35s ease-in-out;
+    background-clip: padding-box;
+}
+
+input:focus{
+    background-color: #000 !important;
+    box-shadow: none !important;
+    border-color: #ff206e !important;
+}
+
+input::placeholder{
+    color: rgb(143, 143, 143) !important;
+}
+.btn-box{
+    cursor: pointer;
+    color: black !important;
+    background-color: white !important;
+    opacity: 1;
+    transition: all 0.35s ease-in-out;
+    border-radius:0 ;
+}
+.btn-box:focus{
+    background-color: #ff206e !important;
+}
+.contact-info h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff206e;
+}
+.contact-info p {
+    color: #fff;
+}
+.text-center{
+    align-items: center !important;
+    padding: 24px 0 8px 0;
+    font-size: 12px;
+}
